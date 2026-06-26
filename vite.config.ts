@@ -13,5 +13,4 @@ export default defineConfig({
   build: {
       outDir: 'docs'
       },
-      base: "/ackathon2_ekata/"
 })
