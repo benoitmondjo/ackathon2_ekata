@@ -1,0 +1,19 @@
+@use "@/assets/scss/reset";
+@use "@/assets/scss/variables" as var;
+
+.btn-orange{
+    padding: .8rem .5rem;
+    border-radius: .5rem;
+    background-color: var.$primary-yellow;
+    color: var.$text-white;
+    font-weight: 600;
+}
+
+.btn-white{
+    padding: .8rem .5rem;
+    border-radius: .5rem;
+    background-color: var.$text-white;
+    color: var.$primary-green;
+    border: .1rem solid var.$primary-green;
+    font-weight: 600;
+}

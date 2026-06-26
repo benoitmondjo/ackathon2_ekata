@@ -1,0 +1,33 @@
+@use "@/assets/scss/reset";
+@use "@/assets/scss/variables" as var;
+
+.producteurs{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    
+    .first-block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.6rem;
+        padding-bottom: 1rem;
+
+        h2{
+            font-size: 1.5rem;
+        }
+        
+        .btn{
+            color: var.$secondary-green;
+            font-weight: bold;
+            padding: .5rem .8rem;
+        }
+    }
+
+    .grid-card{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        gap: 1.5rem;
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+}
