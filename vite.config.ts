@@ -11,13 +11,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-     build: {
-          rollupOptions: {
-               input: {
-                    main: resolve(__dirname, 'index.html')
-               }
-          },
-          outDir: 'docs'
-          },
-          base: "/ackathon2_ekata/"
+  build: {
+      outDir: 'docs'
+      },
+      base: "/ackathon2_ekata/"
 })

@@ -11,6 +11,9 @@ importers:
       '@fontsource-variable/raleway':
         specifier: ^5.2.8
         version: 5.2.8
+      app:
+        specifier: 'link:'
+        version: 'link:'
       react:
         specifier: ^19.2.7
         version: 19.2.7
