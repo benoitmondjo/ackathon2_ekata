@@ -1,12 +1,12 @@
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "../../../components/ProductCard";
 import "./_products.scss";
 
-import mielImg1 from "@/assets/images/products/miel-img-1.jpg";
-import mielImg2 from "@/assets/images/products/miel-img-2.jpg";
-import mielImg3 from "@/assets/images/products/miel-img-3.jpg";
-import chenilleImg1 from "@/assets/images/products/chenille-img-1.png"
-import chenilleImg2 from "@/assets/images/products/chenille-img-2.webp"
-import chenilleImg3 from "@/assets/images/products/chenille-img-3.png"
+import mielImg1 from "../../../assets/images/products/miel-img-1.jpg";
+import mielImg2 from "../../../assets/images/products/miel-img-2.jpg";
+import mielImg3 from "../../../assets/images/products/miel-img-3.jpg";
+import chenilleImg1 from "../../../assets/images/products/chenille-img-1.png"
+import chenilleImg2 from "../../../assets/images/products/chenille-img-2.webp"
+import chenilleImg3 from "../../../assets/images/products/chenille-img-3.png"
 
 
 const allProducts = [

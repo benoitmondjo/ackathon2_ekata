@@ -1,4 +1,4 @@
-import "@/layouts/_footer.scss";
+import "./_footer.scss";
 
 import logo from '@/assets/images/logos/logo.png'
 import { FaFacebookF } from "react-icons/fa";

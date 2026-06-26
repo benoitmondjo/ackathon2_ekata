@@ -1,6 +1,6 @@
-import {ButtonOrange, ButtonWhite} from "@/components/UI/Button";
+import {ButtonOrange, ButtonWhite} from "../../../components/UI/Button";
 
-import heroImg from "@/assets/images/home/hero.png"
+import heroImg from "../../../assets/images/home/hero.png"
 import './_hero.scss';
 
 export default function Hero(){

@@ -1,9 +1,9 @@
-import ProducteurCard from "@/components/ProducteurCard.tsx";
+import ProducteurCard from "../../../components/ProducteurCard";
 import "./_producteurs.scss";
 
-import producteurImg1 from "@/assets/images/producteurs/producteur-img-1.png"
-import producteurImg2 from "@/assets/images/producteurs/producteur-img-2.png"
-import producteurImg3 from "@/assets/images/producteurs/producteur-img-3.png"
+import producteurImg1 from "../../../assets/images/producteurs/producteur-img-1.png"
+import producteurImg2 from "../../../assets/images/producteurs/producteur-img-2.png"
+import producteurImg3 from "../../../assets/images/producteurs/producteur-img-3.png"
 
 const allProducteurs = [
     {

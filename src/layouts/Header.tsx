@@ -1,4 +1,4 @@
-import "@/layouts/_header.scss";
+import "./_header.scss";
 
 import logo from '@/assets/images/logos/logo.png'
 import { CiSearch } from "react-icons/ci";

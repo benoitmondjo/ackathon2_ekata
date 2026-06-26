@@ -1,4 +1,4 @@
-import {ButtonOrange} from "@/components/UI/Button.tsx";
+import {ButtonOrange} from "../../../components/UI/Button";
 import "./_banner.scss";
 
 export default function Banner(){

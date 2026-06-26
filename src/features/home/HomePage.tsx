@@ -1,8 +1,8 @@
-import Hero from "@/features/home/components/Hero.tsx";
-import State from "@/features/home/components/State.tsx";
-import Products from "@/features/home/components/Products.tsx";
-import Producteurs from "@/features/home/components/Producteurs.tsx";
-import Banner from "@/features/home/components/Banner.tsx";
+import Hero from "./components/Hero";
+import State from "./components/State";
+import Products from "./components/Products";
+import Producteurs from "./components/Producteurs";
+import Banner from "./components/Banner";
 
 
 export default function HomePage(){
