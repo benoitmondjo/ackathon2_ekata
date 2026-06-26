@@ -1,0 +1,312 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('../images/paysage\ gab3.jpg') center/cover no-repeat fixed;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+    padding: 20px;
+}
+
+.product-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #FFE4BC;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Fil d'ariane */
+.breadcrumb {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 25px;
+}
+.breadcrumb span {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Disposition principale */
+.product-main {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.product-gallery, .product-info {
+    flex: 1;
+}
+
+/* Section Galerie */
+.main-image-container {
+    position: relative;
+    background: #4E7049;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #ff6b35;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.thumbnails img {
+    width: 70px;
+    height: 70px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.thumbnails img.active {
+    border-color: #ff6b35;
+}
+
+/* Section Informations */
+.product-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.product-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.rating { color: black; font-weight: 500; }
+.stock-status { color: #2a9d8f; font-weight: 500; }
+
+.product-description {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.product-features {
+    list-style: none;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.product-features li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Prix */
+.product-price {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.current-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.price-unit {
+    font-size: 14px;
+    color: #666;
+    margin-right: 10px;
+}
+
+.old-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+/* Zone d'achat */
+.purchase-zone {
+    margin-bottom: 25px;
+}
+
+.purchase-zone label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.action-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.quantity-selector {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.quantity-selector button {
+    background: #f7f7f7;
+    border: none;
+    width: 35px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quantity-selector input {
+    width: 45px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Suppression des flèches par défaut de l'input number */
+.quantity-selector input::-webkit-inner-spin-button { display: none; }
+
+.btn-add-cart {
+    flex: 1;
+    background: #4E7049;
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-add-cart:hover { background: #FAA954; }
+
+.btn-wishlist {
+    background: white;
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Infos de livraison */
+.delivery-info {
+    list-style: none;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.delivery-info li {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Section bas de page (Producteur & Similaires) */
+.product-footer-sections {
+    display: flex;
+    gap: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.producer-card, .similar-products {
+    flex: 1;
+}
+
+.product-footer-sections h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Carte Producteur */
+.producer-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.producer-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.producer-header h3 { font-size: 16px; }
+.producer-location { font-size: 13px; color: #888; }
+.producer-text { font-size: 14px; color: #555; margin-bottom: 12px; line-height: 1.5; }
+.profile-link { font-size: 14px; color: #2a9d8f; font-weight: bold; text-decoration: none; }
+
+/* Produits similaires */
+.similar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.similar-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.similar-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.item-details h4 { font-size: 14px; margin-bottom: 4px; }
+.item-details p { font-size: 14px; font-weight: bold; color: #333; }
+
+/* Version Mobile Simple */
+@media (max-width: 768px) {
+    .product-main, .product-footer-sections {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

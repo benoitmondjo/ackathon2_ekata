@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekata - Catalogue des Produits</title>
+    <link rel="stylesheet" href="../assets/css/catalogue-des-produits.css">
+</head>
+<body>
+    
+    <!-- Conteneur Principal -->
+    <main class="container">
+        
+        <!-- Barre latérale : Filtres -->
+        <aside class="sidebar">
+            <h3>FILTRES</h3>
+            
+            <div class="filter-section">
+                <h4>Catégorie</h4>
+                <label><input type="checkbox" checked> Miel (28)</label>
+                <label><input type="checkbox"> Chenilles fraîches (12)</label>
+                <label><input type="checkbox"> Chenilles séchées (8)</label>
+            </div>
+
+            <div class="filter-section">
+                <h4>Localisation</h4>
+                <label><input type="checkbox"> Estuaire (7)</label>
+                <label><input type="checkbox"> Haut-Ogooué (5)</label>
+                <label><input type="checkbox"> Moyen-Ogooué (8)</label>
+                <label><input type="checkbox"> Ngounié (5)</label>
+                <label><input type="checkbox"> Autres (11)</label>
+            </div>
+
+            <div class="filter-section">
+                <h4>Prix</h4>
+                <label><input type="radio" name="prix"> Moins de 5 000 FCFA</label>
+                <label><input type="radio" name="prix"> 5 000 - 10 000 FCFA</label>
+                <label><input type="radio" name="prix"> 10 000 - 20 000 FCFA</label>
+                <label><input type="radio" name="prix"> Plus de 20 000 FCFA</label>
+            </div>
+
+            <div class="filter-section">
+                <h4>Trier par</h4>
+                <select>
+                    <option>Pertinence</option>
+                    <option>Prix croissant</option>
+                    <option>Prix décroissant</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- Section du Catalogue -->
+        <section class="catalog">
+            
+            <!-- Barre de recherche et options du catalogue -->
+            <div class="catalog-header">
+                <input type="text" class="search-bar" placeholder="Rechercher un produit, un producteur...">
+                <div class="catalog-meta">
+                    <span>Tous les produits (48)</span>
+                    <select class="sort-select">
+                        <option>Trier par : Pertinence</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grille des produits -->
+            <div class="products-grid">
+                
+                <!-- Exemple de Carte Produit (À répéter pour chaque produit) -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/miel2.jpg" alt="Miel toutes fleurs">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Miel toutes fleurs</h4>
+                        <p class="product-price">6 000 FCFA / 500g</p>
+                        <p class="product-rating">⭐ 4.8 (32)</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/miel ruche.jpg" alt="Miel de forêt">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Miel de forêt</h4>
+                        <p class="product-price">8 000 FCFA / 500g</p>
+                        <p class="product-rating">⭐ 4.9 (27)</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/miel4.jpg" alt="Miel d'acacia">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Miel d'acacia</h4>
+                        <p class="product-price">7 500 FCFA / 500g</p>
+                        <p class="product-rating">⭐ 4.6 (21)</p>
+                    </div>
+                </div>
+
+                <!-- Ligne 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/chenilles1.jpeg" alt="Chenilles fraîches">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Chenilles fraîches</h4>
+                        <p class="product-price">5 000 FCFA / 250g</p>
+                        <p class="product-rating">⭐ 4.7 (18)</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/chenilles2.jpeg" alt="Chenilles séchées">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Chenilles séchées</h4>
+                        <p class="product-price">7 000 FCFA / 250g</p>
+                        <p class="product-rating">⭐ 4.6 (14)</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../assets/images/tsombi plat.jpeg" alt="Pack découverte">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Pack découverte</h4>
+                        <p class="product-price">12 000 FCFA</p>
+                        <p class="product-rating">⭐ 4.9 (10)</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <span class="page-num active">1</span>
+                <span class="page-num">2</span>
+                <span class="page-num">3</span>
+                <span class="page-dots">...</span>
+                <span class="page-num">6</span>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

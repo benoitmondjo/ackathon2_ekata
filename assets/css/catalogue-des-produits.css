@@ -1,0 +1,256 @@
+
+@import url("./assets/images/chenilles1.jpeg");
+@import url("./assets/images/chenilles2.jpeg");
+@import url("./assets/images/chenilles3.jpg");
+@import url("./assets/images/chenilles\ plat.jpeg");
+@import url("./assets/images/miel1.jpg");
+@import url("./assets/images/miel2.jpg");
+@import url("./assets/images/miel3.jpg");
+@import url("./assets/images/miel4.jpg");
+@import url("./assets/images/miel5.jpg");
+@import url("./assets/images/miel\ dérivée.jpg");
+@import url("./assets/images/miel\ pâtisserie.jpg");
+@import url("./assets/images/miel\ ruche.jpg");
+@import url("./assets/images/miel\ récolte.jpg");
+@import url("./assets/images/tsombi1.jpeg");
+@import url("./assets/images/tsombi2.jpeg");
+@import url("./assets/images/tsombi\ plat.jpeg");
+
+
+
+
+/* Styles Généraux */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('../images/paysage\ gab1.jpeg') center/cover no-repeat fixed;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+
+/* Structure Principale Grid */
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 40px;
+    padding: 40px 50px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Barre Latérale - Filtres */
+.sidebar h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.filter-section {
+    margin-bottom: 30px;
+}
+
+.filter-section h4 {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.filter-section label {
+    display: block;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filter-section select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Section Catalogue & Recherche */
+.catalog-header {
+    margin-bottom: 25px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.catalog-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.sort-select {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 13px;
+}
+
+/* Grille de Produits (3 colonnes) */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Carte Produit */
+.product-card {
+    background-color: #FFE4BC;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.product-image {
+    background-color: #fff9f1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.product-title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.product-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.product-rating {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.page-num {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.page-num.active {
+    background-color: #1e4620;
+    color: #fff;
+    font-weight: bold;
+}
+
+.page-dots {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*================================================================
+   Media Queries (Adaptation selon la taille de l'écran)
+   ==============================================================*/
+
+/* Tablettes (Moins de 1024px) */
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 200px 1fr; /* Barre latérale plus étroite */
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* Passe à 2 colonnes de produits */
+    }
+}
+
+
+
+/* Mobiles larges et Tablettes en mode portrait (Moins de 768px) */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* La barre latérale passe au-dessus du catalogue */
+        gap: 30px;
+    }
+
+    /* Optionnel : transforme la barre latérale en zone horizontale fluide */
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalog-meta {
+        flex-direction: column; /* Aligne le texte et le tri verticalement sur mobile */
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+
+/* Petits Mobiles (Moins de 480px) */
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr; /* 1 seul produit par ligne pour une lecture confortable */
+    }
+    
+    .container {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page produit (Détails)</title>
+    <link rel="stylesheet" href="../assets/css/page-produit.css">
+</head>
+<body>
+
+    <main class="product-container">
+        <!-- Fil d'ariane / Breadcrumb -->
+        <nav class="breadcrumb">
+            Accueil &gt; Produits &gt; <span>Miel de forêt</span>
+        </nav>
+
+        <div class="product-main">
+            <!-- Galerie d'images (Gauche) -->
+            <section class="product-gallery">
+                <div class="main-image-container">
+                    <span class="discount-badge">-10%</span>
+                    <img src="../assets/images/miel4.jpg" alt="Miel de forêt" class="main-image">
+                </div>
+                <div class="thumbnails">
+                    <img src="../assets/images/miel1.jpg" alt="Miniature 1" class="active">
+                    <img src="../assets/images/miel dérivée.jpg" alt="Miniature 2">
+                    <img src="../assets/images/miel5.jpg" alt="Miniature 3">
+                </div>
+            </section>
+
+            <!-- Infos d'achat (Droite) -->
+            <section class="product-info">
+                <h1 class="product-title">Miel de forêt</h1>
+                
+                <div class="product-meta">
+                    <span class="rating">⭐ 4.9 (27 avis)</span>
+                    <span class="stock-status">✔️ En stock</span>
+                </div>
+
+                <p class="product-description">
+                    Miel pur de forêt tropicale artisanal, riche en nutriments et au goût unique.
+                </p>
+
+                <ul class="product-features">
+                    <li>✔️ 100% naturel</li>
+                    <li>✔️ Récolté artisanalement</li>
+                    <li>✔️ Sans additif</li>
+                </ul>
+
+                <div class="product-price">
+                    <span class="current-price">8 000 FCFA</span>
+                    <span class="price-unit">/ 500g</span>
+                    <span class="old-price">9 000 FCFA</span>
+                </div>
+
+                <div class="purchase-zone">
+                    <label for="quantity">Quantité</label>
+                    <div class="action-row">
+                        <div class="quantity-selector">
+                            <button>-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button>+</button>
+                        </div>
+                        <button class="btn-add-cart">Ajouter au panier</button>
+                        <button class="btn-wishlist">❤️</button>
+                    </div>
+                </div>
+
+                <ul class="delivery-info">
+                    <li>📦 Livraison rapide partout au Gabon</li>
+                    <li>🔒 Paiement sécurisé</li>
+                    <li>🔄 Retour possible sous 7 jours</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Sections du bas (Producteur & Produits similaires) -->
+        <div class="product-footer-sections">
+            <!-- À propos du producteur -->
+            <section class="producer-card">
+                <h2>À propos du producteur</h2>
+                <div class="producer-header">
+                    <img src="../assets/images/miel récolte.jpg" alt="Les Ruchers de l'Ogooué" class="producer-avatar">
+                    <div>
+                        <h3>Les Ruchers de l'Ogooué</h3>
+                        <p class="producer-location">Franceville, Haut-Ogooué</p>
+                    </div>
+                </div>
+                <p class="producer-text">
+                    Apiculteur passionné depuis 2015, nous produisons un miel 100% naturel et de haute qualité.
+                </p>
+                <a href="#" class="profile-link">Voir le profil</a>
+            </section>
+
+            <!-- Produits similaires -->
+            <section class="similar-products">
+                <h2>Produits similaires</h2>
+                <div class="similar-list">
+                    <div class="similar-item">
+                        <img src="../assets/images/miel3.jpg" alt="Miel d'acacia">
+                        <div class="item-details">
+                            <h4>Miel d'acacia</h4>
+                            <p>7 500 FCFA</p>
+                        </div>
+                    </div>
+                    <div class="similar-item">
+                        <img src="../assets/images/miel ruche.jpg" alt="Miel toutes fleurs">
+                        <div class="item-details">
+                            <h4>Miel toutes fleurs</h4>
+                            <p>6 000 FCFA</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>

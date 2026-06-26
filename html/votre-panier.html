@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre panier</title>
+    <link rel="stylesheet" href="../assets/css/votre-panier.css">
+</head>
+<body>
+
+    <div class="cart-container">
+        <!-- En-tête -->
+        <div class="cart-header">
+            <h2>Votre panier <span class="count">(3)</span></h2>
+            <a href="#" class="back-link">Retour à la boutique</a>
+        </div>
+
+        <!-- Tableau Responsive -->
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Produit 1 -->
+                <tr>
+                    <td data-label="Produit">
+                        <div class="product-info">
+                            <img src="https://i0.wp.com/abeilleautonome.fr/wp-content/uploads/2025/08/1000020973-scaled.jpg?fit=1569%2C2560&ssl=1" alt="Miel de forêt">
+                            <div>
+                                <h3>Miel de forêt (500g)</h3>
+                                <p>par Les Ruchers de l'Ogooué</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-label="Prix">8 000 FCFA</td>
+                    <td data-label="Quantité">
+                        <div class="quantity-selector">
+                            <button>-</button><span>1</span><button>+</button>
+                        </div>
+                    </td>
+                    <td data-label="Total" class="item-total">8 000 FCFA</td>
+                    <td class="actions-td"><button class="remove-btn">&times;</button></td>
+                </tr>
+                <!-- Produit 2 -->
+                <tr>
+                    <td data-label="Produit">
+                        <div class="product-info">
+                            <img src="https://ajafe.info/wp-content/uploads/2023/10/hane-1024x765.jpg" alt="Chenilles fraîches">
+                            <div>
+                                <h3>Hannetons frais (250g)</h3>
+                                <p>par les "tsombiculteurs" du Gabon</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-label="Prix">5 000 FCFA</td>
+                    <td data-label="Quantité">
+                        <div class="quantity-selector">
+                            <button>-</button><span>2</span><button>+</button>
+                        </div>
+                    </td>
+                    <td data-label="Total" class="item-total">10 000 FCFA</td>
+                    <td class="actions-td"><button class="remove-btn">&times;</button></td>
+                </tr>
+                <!-- Produit 3 -->
+                <tr>
+                    <td data-label="Produit">
+                        <div class="product-info">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9siwK9Htu3eZb_O3D-cwSknTnJ__r__FR1T0ogiCEuA&s" alt="Miel toutes fleurs">
+                            <div>
+                                <h3>Miel toutes fleurs (500g)</h3>
+                                <p>par Apiculture du Woleu</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-label="Prix">6 000 FCFA</td>
+                    <td data-label="Quantité">
+                        <div class="quantity-selector">
+                            <button>-</button><span>1</span><button>+</button>
+                        </div>
+                    </td>
+                    <td data-label="Total" class="item-total">6 000 FCFA</td>
+                    <td class="actions-td"><button class="remove-btn">&times;</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Section Résumé -->
+        <div class="cart-footer">
+            <div class="summary-box">
+                <div class="summary-row">
+                    <span>Sous-total</span>
+                    <span>24 000 FCFA</span>
+                </div>
+                <div class="summary-row">
+                    <span>Livraison</span>
+                    <span>2 000 FCFA</span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span>26 000 FCFA</span>
+                </div>
+                
+                <button class="btn btn-primary">Passer la commande</button>
+                <button class="btn btn-secondary">Continuer mes achats</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
